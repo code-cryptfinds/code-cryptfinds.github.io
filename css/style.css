@@ -1,0 +1,578 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #e9ecef;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+
+}
+
+nav {
+    background-color: #000000;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.logo {
+    color: #00FF00;
+}
+
+/* Hamburger menu button styles */
+.nav-toggle {
+    display: none;  
+    cursor: pointer;
+    padding: 15px;
+    position: relative;
+    top: 0;
+    right: 0;
+    z-index: 3;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #00FF00;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+.nav-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+}
+
+.nav-link {
+    display: block;
+    padding: 12px 16px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.active {
+    color: #00ff00;
+}
+
+.nav-link:hover:not(.active) {
+    color: #00FF00;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+.container-fluid {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.center-text {
+    text-align: center;
+}
+ 
+.dark {
+    background-color: #ffffff;
+}
+
+.pt {
+    padding-top: 25px;
+}
+
+
+/* Home page */
+.banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/img-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.banner-txt {
+    text-align: center;
+    padding: 60px 100px;
+    color: #ffffff;
+}
+
+.banner-txt button {
+    border: 1px solid #00FF00;
+    border-radius: 30px;
+    background-color: transparent;
+    padding: 10px 16px;
+}
+
+.banner-txt button:hover {
+    background-color: #32CD32;
+    transition: 0.5s ease;
+}    
+    
+.banner-txt button a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+.banner-txt  h1{
+    font-size: 50px;
+}
+
+.banner-txt  p{
+    font-size: 20px;
+}
+
+
+/* Company Description */
+.company-description {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.company-description h2 {
+    font-size: 36px;
+    color: #333333;
+}
+
+.company-description p {
+    font-size: 18px;
+    color: #666666;
+}
+
+/* Customer Reviews */
+.customer-reviews {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.customer-reviews .review {
+    text-align: center;
+    padding: 5px 20px 20px;
+    max-width: 33.33%;
+}
+
+.customer-reviews img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.customer-reviews p {
+    font-size: 16px;
+    color: #666666;
+    padding: 12px;
+}
+
+/* Blog Section */
+.blog {
+    padding: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.blog .blog-post {
+    text-align: center;
+    padding: 20px;
+    max-width: 25%;
+}
+
+.blog-post a {
+    text-decoration: none;
+}
+
+.blog img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.blog h3 {
+    font-size: 20px;
+    color: #333333;
+}
+
+.blog p {
+    font-size: 16px;
+    color: #666666;
+}
+
+/* Hover Effect for Blog Posts */
+.blog-post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+/* Home Page Ends Here */
+
+
+/* About Us */
+
+/* Header Style (Tech Freshness Theme) */
+.header {
+    background-color: #000000;
+    color: #00FF00;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.header h1 {
+    font-size: 36px;
+}
+
+/* About Section Styles */
+.about-section {
+    display: flex;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.about-image {
+    width: 50%;
+    height: auto;
+}
+.about-image img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.about-text {
+    width: 50%;
+    flex: 1;
+    padding-left: 30px;
+}
+
+.about-text h2 {
+    font-size: 24px;
+    color: #333333;
+}
+
+.about-text p {
+    font-size: 18px;
+    color: #666666;
+}
+
+/* Team Section Styles */
+.team-section {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 0px 30px 30px;
+}
+
+.team-member {
+    text-align: center;
+    margin: 10px;
+    max-width: 33.33%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.team-member .team-text {
+    padding: 15px;
+}
+
+.team-member img {
+    width: 100%;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.team-member h3 {
+    font-size: 20px;
+    color: #333333;
+}
+
+.team-member p {
+    font-size: 16px;
+    color: #666666;
+}
+
+/* Vision and Mission Section Styles */
+.vision-mission-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.vision, .mission {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.vision h2, .mission h2 {
+    font-size: 24px;
+    color: #333333;
+    text-align: center;
+}
+
+.vision p, .mission p {
+    font-size: 18px;
+    color: #666666;
+}
+
+/* Hover Effect for Team Members */
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+/* About Us Ends Here */
+
+/* Services page */
+.service-banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/img-4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+/* Services section styles */
+.services {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    padding: 20px 0px;
+}
+
+
+.service {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.service img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.service h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.service p {
+    font-size: 16px;
+    color: #666;
+}
+
+
+/* Appointment section styles */
+.appointment-section {
+    background-color: #fff;
+    padding: 25px 0;
+}
+
+.appointment-section h2 {
+    font-size: 30px;
+    margin: 0;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Styling for the appointment scheduling form */
+#appointment-form {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 30px;
+    margin: 0 auto; /* Center the form horizontally on the page */
+    border-top: 7px solid #00FF00;
+    border-bottom: 7px solid #00FF00;
+    max-width: 900px; /* Limit the maximum width of the form */
+}
+
+/* Style for form labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Style for form input fields */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="time"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Style for the submit button */
+button[type="submit"] {
+    background-color: #00FF00;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #32CD32;
+}
+
+/* Services Page Ends Here */
+
+
+/* Contact Page */
+/* Header Style */
+.header {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 255, 0, 0.2)), url("../images/img-5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.header h1 {
+    font-size: 36px;
+    color: #ffffff;
+}
+
+/* Contact Information and Form Styles */
+.contact-info, .contact-form {
+    padding: 30px 0;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row;
+    margin: 30px 0px;
+}
+
+.contact-info {
+    width: 40%;
+}
+
+.contact-form {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 30px;
+    width: 60%;
+    border-top: 7px solid #00FF00;
+    border-bottom: 7px solid #00FF00;
+}
+
+ .contact-form h2 {
+    font-size: 24px;
+    color: #333333;
+    text-align: center;
+}
+
+.contact-info p {
+    font-size: 18px;
+    color: #666666;
+}
+
+.contact-form form {
+    display: flex;
+    flex-flow: column;
+}
+
+.contact-form label {
+    font-size: 18px;
+    color: #333333;
+    margin-bottom: 8px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    background-color: #00FF00;
+    color: #000000;
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 40%;
+}
+
+.contact-form button:hover {
+    background-color: #32CD32;
+}
+
+/* Location Section Style */
+iframe {
+    width: 100%;
+    height: 400px;
+}
+/* Contact Ends Here */
+
+/* Footer */
+footer {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000;
+    color: #00FF00;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 14px;
+}

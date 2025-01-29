@@ -1,0 +1,322 @@
+@media screen and (max-width: 576px) {
+    .nav-bar {
+        display: none; /* Hide the regular navigation menu */
+    }
+
+    .nav-toggle {
+        display: block; /* Show the hamburger menu button */
+        position: absolute;
+    }
+
+    /* Styles for the navigation menu when it's open */
+    .nav-open {
+        display: block;
+        margin-left: 20px;
+    }
+
+    .nav-menu {
+        width: 70%;
+        height: 100%;
+        position: fixed;
+        z-index: 2;
+        background-color: rgba(0, 0, 0, 0.98);
+    }
+
+    .newNav {
+        display: flex;
+        align-items: flex-start;
+        flex-flow: column;
+    }
+
+
+    /* Animation for the hamburger menu button when clicked */
+    .change .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 5px);
+    }
+    .change .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .change .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-6px, -6px);
+    }
+
+    .container {
+        max-width: 520px;
+        margin: 0 auto;
+    }
+
+    /* Home Page Starts Here */
+    .banner {
+        height: 70vh;
+    }
+    
+    .banner-txt {
+        text-align: center;
+        padding: 0px;
+        color: #ffffff;
+    }
+    
+    .banner-txt button {
+        border: 1px solid #00FF00;
+        border-radius: 20px;
+        background-color: transparent;
+        padding: 5px 8px;
+    }
+
+    .banner-txt  h1{
+        font-size: 20px;
+    }
+    
+    .banner-txt  p{
+        font-size: 14px;
+    }
+
+    .customer-reviews {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-flow: column;
+    }
+
+    .customer-reviews .review {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    /* Blog Section */
+.blog {
+    padding: 10px 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.blog .blog-post {
+    text-align: center;
+    padding: 10px 20px;
+    max-width: 100%;
+}
+
+/* Home Page Ends Here */
+
+/* About Us Starts Here*/
+.header {
+    background-color: #000000;
+    color: #00FF00;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.header h1 {
+    font-size: 36px;
+}
+
+/* About Section Styles */
+.about-section {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding: 30px 0;
+}
+
+.about-image {
+    width: 100%;
+    height: auto;
+}
+.about-image img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.about-text {
+    width: 100%;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.about-text h2 {
+    font-size: 24px;
+    color: #333333;
+}
+
+.about-text p {
+    font-size: 16px;
+    color: #666666;
+}
+
+/* Team Section Styles */
+.team-section {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.team-member {
+    text-align: center;
+    margin: 10px;
+    max-width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.team-member .team-text {
+    padding: 15px;
+}
+
+.team-member img {
+    width: 100%;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.team-member h3 {
+    font-size: 20px;
+    color: #333333;
+}
+
+.team-member p {
+    font-size: 16px;
+    color: #666666;
+}
+
+/* Vision and Mission Section Styles */
+.vision-mission-section {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding: 30px 0;
+}
+
+.vision, .mission {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.vision h2, .mission h2 {
+    font-size: 24px;
+    color: #333333;
+    text-align: center;
+}
+
+.vision p, .mission p {
+    font-size: 18px;
+    color: #666666;
+}
+
+/* About Us Ends Here*/
+
+/* Contact Page Starts Here*/
+/* Contact Information and Form Styles */
+.contact-info, .contact-form {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    margin: 30px 0px;
+}
+
+.contact-form {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 10px;
+    border-top: 7px solid #00FF00;
+    border-bottom: 7px solid #00FF00;
+}
+
+ .contact-form h2 {
+    font-size: 20px;
+    color: #333333;
+    text-align: center;
+}
+
+.contact-info p {
+    font-size: 16px;
+    color: #666666;
+}
+
+.contact-form label {
+    font-size: 18px;
+    color: #333333;
+    margin-bottom: 8px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Contact Page Ends Here*/
+}
+
+/* Styles for the navigation menu on medium screens */
+@media screen and (max-width: 768px) {
+    .nav-link {
+        padding: 8px 10px;
+        
+    }
+
+    .banner-txt {
+        text-align: center;
+        padding: 10px;
+        color: #ffffff;
+    }
+
+    .banner-txt  h1{
+        font-size: 28px;
+    }
+    
+    .banner-txt  p{
+        font-size: 20px;
+    } 
+    
+    .blog .blog-post {
+        text-align: center;
+        padding: 20px;
+        max-width: 50%;
+    }
+
+    .team-section {
+        flex-wrap: wrap;
+    }
+/* services Page */
+    .services {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+        padding: 20px 0px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    /* Services Starts Here */
+    .services {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+        padding: 20px 0px;
+    }
+
+    /* .blog .blog-post {
+        text-align: center;
+        padding: 10px;
+        max-width: 100%;
+    } */
+}
+@media screen and (max-width: 576px) {
+.blog .blog-post {
+    text-align: center;
+    padding: 10px 20px;
+    max-width: 100%;
+}
+}
